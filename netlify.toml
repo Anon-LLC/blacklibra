@@ -1,14 +1,3 @@
 [dev]
   targetPort = 3000
   
-[[headers]]
-  for = "/cn/*"
-  [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
-    Content-Language = "zh-CN"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    Content-Language = "en-US"
